@@ -1,13 +1,16 @@
-<template name="home">
-  <div class="template-home">
-    <div class="page-header">
-      <h1>Home Page</h1>
+<template name="home" >
+  <div class="template-home text-center" style="background-color:#FF3B30;">
+    <div class="page-header text-center" style="width:50%;  margin-right:auto; margin-left:auto;">
+      	<p style="font-size:25px; color:white;">Login with your Emirates Account</p>
+    	<input style="border-radius: 5em; margin-top: 30px; width:60%; margin-right:auto; margin-left:auto;" type="text" class="text-center form-control" name="username" placeholder="Username" >
+    	<input style="border-radius: 5em; width:60%; margin-top: 30px; margin-right:auto; margin-left:auto;margin-bottom: 30px; " type="text" class="text-center form-control" name="password" placeholder="Password" >
+   
     </div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
     <div class="text-center"> 
-    <a href="{{ pathFor 'instaLogin' }}" class="btn btn-primary navbar-btn" style="text-align:center">Continue</a>
+    	<p style="font-size:25px; color:white;">or, create a new one</p>
+    </div>
+    <div class="text-center" style="width:50%; margin-right:auto; margin-left:auto;"> 
+    <a href="{{ pathFor 'instaLogin' }}" class="btn btn-primary navbar-btn" style="background-color: transparent;text-align:center ;border-radius: 5em;  width:60%; border-width:2px; border-color:white;">Continue</a>
 	</div>
   </div>
 
