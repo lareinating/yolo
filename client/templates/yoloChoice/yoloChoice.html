@@ -1,15 +1,55 @@
 <template name="yoloChoice">
-  <div class="template-yoloChoice">
+  <head>
+    <style>
+      .centered {
+        text-align: center;
+      }
+      .left {
+        text-align: left;
+      }
+      .right {
+        text-align: right;
+      }
+      .inline {
+        display: inline-block;
+      }
+
+      .yolobackground {
+        background-color: #F8F8F8;
+      }
+
+      body {
+        background-color: : #F8F8F8;
+      }
+
+    </style>
+  </head>
+  <div class="template-yoloChoice centered appbackground">
     <div class="page-header">
-      <h1>Welcome to Project Title</h1>
+      <h2 class="centered">Take a Yolo pick</h2>
     </div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+    <div class="yolobackground">
+    <p class="left">
+      Yolo gives you a chance to be upgraded from an ECONOMY CLASS, BUSINESS CLASS or a FIRST CLASS TICKET! Nice!
     </p>
-    <div class="text-center"> 
     <a href="{{ pathFor 'animationPage' }}" class="btn btn-primary navbar-btn" style="text-align:center">YOLO</a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <div class="yolobackground">
+    <p class="left">
+      Yolo Maxx ensures you get a 40% higher chance to obtain that coveted FIRST CLASS TICKET to a destination we suggest. #yolo
+    </p>
     <a href="{{ pathFor 'animationPage' }}" class="btn btn-primary navbar-btn" style="text-align:center">YOLO MAX</a>
-	</div>
+  </div>
+
+  <br>
+  <br>
+
   </div>
 
 </template>

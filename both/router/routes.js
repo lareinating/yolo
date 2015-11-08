@@ -45,10 +45,21 @@ Router.route('/finalAcceptance', {
 Router.route('/finalAcceptanceCharge', {
   name: 'finalAcceptanceCharge',
 });
+
 Router.route('/prizePage', {
   name: 'prizePage',
 });
 
 Router.plugin('ensureSignedIn', {
   only: ['dashboard']
+});
+
+
+// zy
+Router.route('/payment', {
+  name: 'payment',
+});
+
+Router.route('/wheelAnimation', {
+  name: 'wheelAnimation',
 });

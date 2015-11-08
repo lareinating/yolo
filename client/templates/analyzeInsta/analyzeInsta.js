@@ -74,6 +74,7 @@ Template.analyzeInsta.rendered = function() {
 //     }
 // }
 
+
 // getLatestIGPhoto(api_key);
 
 // var getCategory = function(tagArray){
