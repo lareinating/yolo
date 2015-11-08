@@ -1,55 +1,52 @@
-<template name="yoloChoice">
-  <head>
-    <style>
-      .centered {
-        text-align: center;
-      }
-      .left {
-        text-align: left;
-      }
-      .right {
-        text-align: right;
-      }
-      .inline {
-        display: inline-block;
-      }
 
-      .yolobackground {
-        background-color: #F8F8F8;
-      }
+<template name="yoloChoice" >
+  <div class="template-yoloChoice text-center" >
+    <div class="page-header text-center" style="border-bottom:none;width:90%;  margin-right:auto; margin-left:auto;">
+        <p style="font-size:25px; color:black; margin-top:20px;">Take a Yolo pick</p>
 
-      body {
-        background-color: : #F8F8F8;
-      }
-
-    </style>
-  </head>
-  <div class="template-yoloChoice centered appbackground">
-    <div class="page-header">
-      <h2 class="centered">Take a Yolo pick</h2>
     </div>
 
-    <div class="yolobackground">
+    <div class="yolobackground text-center" style="background-color:white; width:80%; margin-right:auto; margin-left:auto; padding:10px; text-align:left;">
     <p class="left">
       Yolo gives you a chance to be upgraded from an ECONOMY CLASS, BUSINESS CLASS or a FIRST CLASS TICKET! Nice!
     </p>
-    <a href="{{ pathFor 'animationPage' }}" class="btn btn-primary navbar-btn" style="text-align:center">YOLO</a>
+    <div class="text-center" style="text-align:left; margin-right:auto; margin-left:auto; ">
+    <a href="{{ pathFor 'animationPage' }}" class="btn btn-primary navbar-btn text-center" style="background-color: #FFCC00;text-align:center ;border-radius: 5em;  width:60%; border-width:2px; border-color:#FFCC00;">YOLO</a>
+    </div>
     </div>
 
     <br>
     <br>
     <br>
 
-    <div class="yolobackground">
+    <div class="yolobackground text-center" style="background-color:white; width:80%; margin-right:auto; margin-left:auto; padding:10px; text-align:left;">
     <p class="left">
       Yolo Maxx ensures you get a 40% higher chance to obtain that coveted FIRST CLASS TICKET to a destination we suggest. #yolo
     </p>
-    <a href="{{ pathFor 'animationPage' }}" class="btn btn-primary navbar-btn" style="text-align:center">YOLO MAX</a>
+
+    <a href="{{ pathFor 'animationPage' }}" class="btn btn-primary navbar-btn" style="background-color: #FFCC00;text-align:center ;border-radius: 5em;  width:60%; border-width:2px; border-color:#FFCC00;">YOLO MAX</a>
   </div>
 
   <br>
   <br>
 
+
+   
+    
   </div>
+
+  <style>
+body {
+ /* background-image: url("images/instalogin.jpg");
+  background-position: left 500px top;*/
+  background-color: #F8F8F8;
+
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
+</style>
 
 </template>
