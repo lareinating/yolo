@@ -1,12 +1,111 @@
 <template name="animationPage">
+	<head>
+	    <style>
+			.centered {
+				text-align: center;
+			}
+			.left {
+				text-align: left;
+			}
+			.right {
+				text-align: right;
+			}
+			.inline {
+				display: inline-block;
+			}
+			#viewbox {
+				overflow: hidden;
+				width: 325px;
+				height: 325px;
+				position: relative;
+				 margin-left: auto ;
+				  margin-right: auto ;
+			}
+			#viewbox .wrapper {
+				position: absolute;
+				width: 325 ;
+				  margin-left: auto ;
+				  margin-right: auto ;
+			}
+			#viewbox ul {
+				list-style: none;
+				margin: 0;
+				padding: 0;
+			}
+			#viewbox li {
+				display: block;
+				width: 325px;
+				height: 325px;
+				text-align: center;
+				font-size: 170px;
+				
+			}
+		</style>
+  </head>
   <div class="template-animationPage">
-    <div class="page-header">
-      <h1>Animation PAge</h1>
+    <div class="page-header centered">
+      <h1>I am Feeling Lucky</h1>
     </div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <a href="{{ pathFor 'comfirmation' }}" class="btn btn-primary navbar-btn" style="text-align:center">Comfirmation Page</a>
+    <div id="viewbox">
+    <div class="wrapper centered" id="slotmachine">
+        <ul>
+            <li ><img src="https://dl.dropboxusercontent.com/u/27689804/pics/Picture1.png" style="width:350px;height:350px;"></li>
+            <li ><img src="https://dl.dropboxusercontent.com/u/27689804/pics/Picture4.png" style="width:350px;height:350px;"></li>
+            <li ><img src="https://dl.dropboxusercontent.com/u/27689804/pics/Picture9.png" style="width:350px;height:350px;"></li>
+            <li ><img src="https://dl.dropboxusercontent.com/u/27689804/pics/Picture10.png" style="width:350px;height:350px;"></li>
+            <li ><img src="https://dl.dropboxusercontent.com/u/27689804/pics/Picture13.png" style="width:350px;height:350px;"></li>
+            <li ><img src="https://dl.dropboxusercontent.com/u/27689804/pics/Picture17.png" style="width:350px;height:350px;"></li>
+            <li ><img src="https://dl.dropboxusercontent.com/u/27689804/pics/Picture19.png" style="width:350px;height:350px;"></li>
+            <li ><img src="https://dl.dropboxusercontent.com/u/27689804/pics/Picture22.png" style="width:350px;height:350px;"></li>
+            <li ><img src="https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfa1/v/t34.0-12/12207955_10153348388668843_1903102243_n.jpg?oh=9b9cb3ddb0bd974b4c9be8747cd3105f&oe=564091D5" style="width:350px;height:350px;"></li>
+        </ul>
+    </div>
   </div>
+  <div class="centered">
+    <a id="roll" class="btn btn-primary navbar-btn " style="text-align:center">Let's YOLO </a>
+</div>
+</div>
+
+<script>
+// Clone the first element and append it to the end of the list
+    var list = $('#slotmachine>ul:first');
+    var firstItem = list.find('li:first');
+    firstItem.clone().appendTo(list);
+
+    function spin(count) {
+        $('#slotmachine').stop().animate({
+            top: -2800
+        }, 3000, 'linear', function () {
+            if (count == 0) {
+                var slot = 8,
+                    top = -slot * 325,
+                    time =  500 * slot / 8;
+                $(this).css({
+                    top: 0
+                }).animate({
+                    top: top
+                },time)
+                setTimeout(function() {window.location.href = "{{pathFor 'prizePage'}}";}, 1000);
+            } else {
+                $(this).css({
+                    top: 0
+                })
+                spin(count - 1)
+            };
+        });
+    }
+        
+
+   $('#roll').click(function(){
+       	$('#slotmachine').css({
+            top: 0
+        }) 
+   		spin(1);
+   });
+
+</script>
+
+
 
 </template>
+
