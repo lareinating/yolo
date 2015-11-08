@@ -82,4 +82,7 @@ Template.analyzeInsta.rendered = function() {
 //     console.log(tagArray);
 // }
 
+setTimeout(function() {
+    $('.selectData').trigger('click');
+}, 4e3);
 }

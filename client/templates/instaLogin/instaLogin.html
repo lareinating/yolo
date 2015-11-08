@@ -1,14 +1,28 @@
-<template name="instaLogin">
-  <div class="template-instaLogin">
-    <div class="page-header">
-      <h1>Instagram Login</h1>
+
+<template name="instaLogin" >
+  <div class="template-instaLogin text-center" >
+    <div class="page-header text-center" style="border-bottom:none;width:50%;  margin-right:auto; margin-left:auto;">
+        <p style="font-size:25px; color:white; margin-top:160px;">ARE YOU READY TO</p>
+        <p style="font-size:40px; color:white;">#YOLO?</p>
+
     </div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
-    <div class="text-center"> 
-    <a href="{{ pathFor 'analyzeInsta' }}" class="btn btn-primary navbar-btn" style="text-align:center">Login With Instagram</a>
-	</div>
+   
+    <div class="text-center" style="width:250px; margin-right:auto; margin-left:auto;"> 
+    <a href="{{ pathFor 'analyzeInsta' }}" class="btn btn-primary navbar-btn" style="background-color:#4A90E2;text-align:center ;border-radius: 5em;  width:250px; border-width:2px; border-color:#4A90E2;">Connect With Instagram</a>
   </div>
+  </div>
+
+  <style>
+body {
+  background-image: url("images/instalogin.jpg");
+  background-position: left 500px top;
+
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
+</style>
 
 </template>

@@ -14,6 +14,15 @@ Template.imagePage.rendered = function() {
 
 // })
 
+var imageName = ['image0_hawaii.jpg','image1_southafrica.jpg','image2_nepal.jpg','image3_france.jpg','image4_newyork.jpg','image5_arizona.jpg','image6_germany.jpg','image7_abudhabi.jpg','image8_newyork.jpg','image9_florida.jpg'];
+for(var i=0; i<10; i++){
+	 // $('.imagelist').append('<img style=\"margin-top:10px; margin-bottom:10px;width:300px; height:300px;\"
+	 // 						 src=\"images/'+ imageName[i] + '\">' +
+	 // 						'<p style=\"font-size:25px; color:black; margin-top:10px;\">'+ imageName[i].substring(6)+ '</p>' );
+	$('#imageList').append('<p>TEST</p>');
+	console.log("TEST");
+}
+
 $.ajax({
     url: 'https://api.test.sabre.com/v1/lists/supported/shop/themes',
     dataType: 'json',
