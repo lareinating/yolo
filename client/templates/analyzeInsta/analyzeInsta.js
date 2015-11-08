@@ -72,7 +72,7 @@ var groupMultipleAlchemyTags = function (igData) {
     }
 }
 
-getLatestIGPhoto(api_key);
+// getLatestIGPhoto(api_key);
 
 var getCategory = function(tagArray){
 
