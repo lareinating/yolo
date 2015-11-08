@@ -15,20 +15,25 @@
       }
     </style>
   </head>
-  <div class="template-prizePage">
-    <div class="page-header centered">
-      <h1>Congratulations</h1>
-      <p> 
-        You have just won a First Class Ticket to:
-      </p>
-    </div>
+  <div class="template-prizePage text-center">
+
+      <p style="font-size:35px; color:black; margin-top:10px; margin-bottom:10px;">Congratulations!</p>
+      <p style="font-size:20px; color:black; margin-top:10px; margin-bottom:5px;">You have just won a first class ticket.</p>
+  
     
-    <li ><img src="https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfa1/v/t34.0-12/12207955_10153348388668843_1903102243_n.jpg?oh=9b9cb3ddb0bd974b4c9be8747cd3105f&oe=564091D5" style="width:350px;height:350px;"></li>
+    <li ><img src="https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfa1/v/t34.0-12/12207955_10153348388668843_1903102243_n.jpg?oh=9b9cb3ddb0bd974b4c9be8747cd3105f&oe=564091D5" style="width:300px;height:300px;"></li>
 
     <div class="text-center"> 
-    <a href="{{ pathFor 'confirmation' }}" class="btn btn-primary navbar-btn" style="text-align:center">CONFIRM NOW!</a>
-    <a href="{{ pathFor 'animationPage' }}" class="btn btn-primary navbar-btn" style="text-align:center">RE-ROLL (10 Credits)</a>
+
+     <a href="{{ pathFor 'confirmation' }}" class="btn btn-primary navbar-btn" style="background-color: #FFCC00;text-align:center ;border-radius: 5em;  width:60%; border-width:2px; margin-top: 5px;border-color:#FFCC00;">CONFIRM NOW!</a>
+      <a href="{{ pathFor 'animationPage' }}" class="btn btn-primary navbar-btn" style="background-color: #FFCC00;text-align:center ;border-radius: 5em;  width:60%; border-width:2px; border-color:#FFCC00;">RE-ROLL (10 CREDITS)</a>
 	</div>
   </div>
+
+  <style>
+    body{
+        background-color: #F8f8f8;
+    }
+</style>
 
 </template>

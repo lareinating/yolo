@@ -1,4 +1,4 @@
-Template.comfirmation.rendered = function() {
+Template.confirmation.rendered = function() {
 // <script type="text/javascript" src="//api.skyscanner.net/api.ashx?key=0c535f89-a861-48a2-aab2-e67b893edcd0"></script>
 // <script type="text/javascript">
 //    skyscanner.load("snippets","2");
