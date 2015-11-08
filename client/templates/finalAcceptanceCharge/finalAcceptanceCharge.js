@@ -8,7 +8,6 @@ $.getScript( "http://api.skyscanner.net/api.ashx?key=19166618-691a-4628-a1d0-f6f
        snippet.setColourScheme("classicbluelight");
        snippet.setProduct("hotels","1");
        snippet.setProduct("carhire","2");
-
        snippet.draw(document.getElementById("snippet_searchpanel"));
    }
    skyscanner.setOnLoadCallback(main);
