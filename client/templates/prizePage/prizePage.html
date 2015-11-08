@@ -1,14 +1,33 @@
 <template name="prizePage">
+  <head>
+    <style>
+      .centered {
+        text-align: center;
+      }
+      .left {
+        text-align: left;
+      }
+      .right {
+        text-align: right;
+      }
+      .inline {
+        display: inline-block;
+      }
+    </style>
+  </head>
   <div class="template-prizePage">
-    <div class="page-header">
-      <h1>Prize PAge</h1>
+    <div class="page-header centered">
+      <h1>Congratulations</h1>
+      <p> 
+        You have just won a First Class Ticket to:
+      </p>
     </div>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-    </p>
+    
+    <li ><img src="https://scontent-sea1-1.xx.fbcdn.net/hphotos-xfa1/v/t34.0-12/12207955_10153348388668843_1903102243_n.jpg?oh=9b9cb3ddb0bd974b4c9be8747cd3105f&oe=564091D5" style="width:350px;height:350px;"></li>
+
     <div class="text-center"> 
     <a href="{{ pathFor 'confirmation' }}" class="btn btn-primary navbar-btn" style="text-align:center">CONFIRM NOW!</a>
-    <a href="{{ pathFor 'animationPage' }}" class="btn btn-primary navbar-btn" style="text-align:center">RE-ROLL (+$0.99)</a>
+    <a href="{{ pathFor 'animationPage' }}" class="btn btn-primary navbar-btn" style="text-align:center">RE-ROLL (10 Credits)</a>
 	</div>
   </div>
 

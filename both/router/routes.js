@@ -35,8 +35,8 @@ Router.route('/imagePage', {
   name: 'imagePage',
 });
 
-Router.route('/comfirmation', {
-  name: 'comfirmation',
+Router.route('/confirmation', {
+  name: 'confirmation',
 });
 Router.route('/finalAcceptance', {
   name: 'finalAcceptance',
