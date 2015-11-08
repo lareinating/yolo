@@ -1,0 +1,32 @@
+
+<template name="selectData" >
+  <div class="template-selectData text-center" >
+    <div class="page-header text-center" style="border-bottom:none;width:80%;  margin-right:auto; margin-left:auto;">
+        <p style="font-size:25px; color:white; margin-top:50px;">Select Date Range</p>
+    </div>
+   <input style="border-radius: 5em; width:60%; margin-top: 10px; margin-right:auto; margin-left:auto;margin-bottom: 10px; " type="text" class="text-center form-control" name="password" placeholder="mm/dd/yy" >
+      <p style="font-size:25px; color:white; margin-top:10px;">To</p>
+   <input style="border-radius: 5em; width:60%; margin-top: 10px; margin-right:auto; margin-left:auto;margin-bottom: 10px; " type="text" class="text-center form-control" name="password" placeholder="mm/dd/yy" >
+
+           <p style="font-size:25px; color:white; margin-top:50px;">Travelling with: (enter email seperated with commas)</p>
+
+            <input style="border-radius: 5em; width:60%; margin-top: 20px; margin-right:auto; margin-left:auto;margin-bottom: 20px; " type="text" class="text-center form-control" name="password" placeholder="emails" >
+    <div class="text-center" style="width:60%; margin-right:auto; margin-left:auto;"> 
+    <a href="{{ pathFor 'imagePage' }}" class="btn btn-primary navbar-btn" style="background-color:#4A90E2;text-align:center ;border-radius: 5em;  width:60%; border-width:2px; border-color:#4A90E2;">Continue</a>
+  </div>
+  </div>
+
+  <style>
+body {
+  background-image: url("images/forest.jpeg");
+/*  background-position: left 500px top;
+*/
+}
+
+h1 {
+    color: maroon;
+    margin-left: 40px;
+} 
+</style>
+
+</template>
